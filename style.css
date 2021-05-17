@@ -3,12 +3,22 @@
   src: url("font/newamsterdam-webfont.woff2") format("woff2");
 }
 
-body {
+* {
+  box-sizing: border-box;
   margin: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+img,
+video {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 #first_section {
-  background-image: url(climb.png);
+  background-image: url(billeder/climb.png);
   background-size: cover;
   width: 100vw;
   height: 60vw;
@@ -17,10 +27,13 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+
+/* Fonts */
 #first_section p {
   color: white;
   font-size: 3vw;
   padding-left: 3vw;
+  padding-top: 3vw;
   font-family: amsterdam;
   margin-bottom: 0;
 }
@@ -30,4 +43,42 @@ body {
   padding-left: 3vw;
   font-family: amsterdam;
   margin: 0;
+}
+h2 {
+  font-size: 4vw;
+  padding-left: 3vw;
+  padding-top: 10vw;
+  font-family: amsterdam;
+}
+
+#second_section p {
+  font-size: 2vw;
+  padding-left: 3vw;
+  padding-top: 1vw;
+  font-family: amsterdam;
+  margin-bottom: 0;
+}
+
+/* Galleriet med billeder */
+
+.gallery_down {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.5rem;
+}
+
+.gallery_down img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery_up {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.5rem;
+}
+
+.gallery_up img {
+  height: 100%;
+  object-fit: cover;
 }
