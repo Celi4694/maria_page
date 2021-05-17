@@ -61,6 +61,29 @@ h2 {
   margin-bottom: 0;
 }
 
+/* Third section  */
+
+#third_section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 10vw;
+
+  gap: 10vw;
+}
+
+#third_section img {
+  width: 70%;
+}
+
+#third_section p {
+  font-size: 1.5vw;
+  padding-left: 3vw;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+  font-family: sans-serif;
+  margin-bottom: 0;
+}
+
 /* Galleriet med billeder */
 
 .gallery_down {
@@ -104,7 +127,7 @@ iframe {
 }
 
 /* Linket til youtube video */
-ul {
+#second_section ul {
   list-style: none;
   font-size: 2vw;
   padding-left: 2.7vw;
@@ -118,4 +141,13 @@ a {
 
 html {
   scroll-behavior: smooth;
+}
+
+footer ul {
+  list-style: none;
+  font-size: 1vw;
+  padding-left: 1vw;
+  padding-bottom: 1vw;
+  font-family: "Courier New", Courier, monospace;
+  margin-bottom: 0;
 }
