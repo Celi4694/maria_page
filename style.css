@@ -1,3 +1,12 @@
+@font-face {
+  font-family: "amsterdam";
+  src: url("font/newamsterdam-webfont.woff2") format("woff2");
+}
+
+body {
+  margin: 0;
+}
+
 #first_section {
   background-image: url(climb.png);
   background-size: cover;
@@ -10,11 +19,15 @@
 }
 #first_section p {
   color: white;
-  font-size: 2vw;
+  font-size: 3vw;
   padding-left: 3vw;
+  font-family: amsterdam;
+  margin-bottom: 0;
 }
 #first_section h1 {
   color: white;
-  font-size: 6vw;
+  font-size: 10vw;
   padding-left: 3vw;
+  font-family: amsterdam;
+  margin: 0;
 }
