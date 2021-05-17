@@ -8,11 +8,18 @@ body {
   margin-right: 1vw;
 }
 
-img,
-video {
+img {
   width: 100%;
   height: auto;
   display: block;
+}
+
+video {
+  width: 40%;
+  height: auto;
+  display: block;
+  margin-left: 57vw;
+  margin-top: 92vw;
 }
 
 #first_section {
@@ -37,6 +44,22 @@ video {
   padding-left: 2vw;
   font-family: sans-serif;
   margin: 0;
+}
+
+#pictures {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 15%;
+  height: auto;
+  gap: 1vw;
+  float: right;
+  margin-right: 1vw;
+}
+
+#pictures img {
+  border: black;
+  border-style: solid;
+  border-width: 0.5vw;
 }
 
 footer ul {
