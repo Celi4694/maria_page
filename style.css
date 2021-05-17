@@ -6,8 +6,12 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  padding-left: 4px;
-  padding-right: 4px;
+}
+
+body {
+  margin-left: 1vw;
+  margin-right: 1vw;
+  margin-top: 1vw;
 }
 
 img,
@@ -19,13 +23,9 @@ video {
 
 #first_section {
   background-image: url(billeder/climb.png);
-  background-size: cover;
-  width: 100vw;
+  background-size: 100%;
+  width: 100%;
   height: 60vw;
-  background-position: 23% 10%;
-  grid-column: 1/6;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
 }
 
 /* Fonts */
@@ -51,7 +51,8 @@ h2 {
   font-family: amsterdam;
 }
 
-#second_section p {
+#second_section p,
+#fifth_section p {
   font-size: 2vw;
   padding-left: 3vw;
   padding-top: 1vw;
@@ -77,6 +78,7 @@ h2 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 0.5rem;
+  margin-bottom: 2vw;
 }
 
 .gallery_up img {
@@ -84,11 +86,14 @@ h2 {
   object-fit: cover;
 }
 
+/* Fifth section video */
+
 .iframe_wrapper {
   position: relative;
   width: 100%;
   height: 0;
   padding-top: 56.25%;
+  margin-bottom: 3vw;
 }
 
 iframe {
@@ -96,4 +101,21 @@ iframe {
   inset: 0;
   height: 100%;
   width: 100%;
+}
+
+/* Linket til youtube video */
+ul {
+  list-style: none;
+  font-size: 2vw;
+  padding-left: 2.7vw;
+  padding-bottom: 1vw;
+  font-family: amsterdam;
+  margin-bottom: 0;
+}
+a {
+  color: black;
+}
+
+html {
+  scroll-behavior: smooth;
 }
